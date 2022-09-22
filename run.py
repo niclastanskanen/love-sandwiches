@@ -122,6 +122,7 @@ def get_stock_values(data):
     """
     Calculate and return number of sandwiches to make next market
     """
+    print("Make the following numbers of sandwiches for next market:\n")
     headings = SHEET.worksheet("stock").row_values(1)
     return {heading:value for heading, value in zip(headings, data)}
 
